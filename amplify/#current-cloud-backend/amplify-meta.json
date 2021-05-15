@@ -1,0 +1,39 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-awscognitotutorialst-dev-161130-authRole",
+      "UnauthRoleArn": "arn:aws:iam::376549472293:role/amplify-awscognitotutorialst-dev-161130-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::376549472293:role/amplify-awscognitotutorialst-dev-161130-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-awscognitotutorialst-dev-161130-deployment",
+      "UnauthRoleName": "amplify-awscognitotutorialst-dev-161130-unauthRole",
+      "StackName": "amplify-awscognitotutorialst-dev-161130",
+      "StackId": "arn:aws:cloudformation:us-east-1:376549472293:stack/amplify-awscognitotutorialst-dev-161130/4014ba10-b35e-11eb-9931-0a6e9e609c1f",
+      "AmplifyAppId": "d23nlqzudeedf7"
+    }
+  },
+  "auth": {
+    "awscognitotutorialst4270389d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "us-east-1_aQxiS8yjK",
+        "AppClientIDWeb": "3mkio8dtju0qi3a7ev8j67bmdt",
+        "AppClientID": "32mjef2tcqamdeq9ge6mjjn0sb",
+        "HostedUIDomain": "cogtutorialst4270389d-dev",
+        "IdentityPoolId": "us-east-1:05e7c6fc-3831-4e02-9fde-2d8623500530",
+        "IdentityPoolName": "awscognitotutorialst4270389d_identitypool_4270389d__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
+        "UserPoolName": "awscognitotutorialst4270389d_userpool_4270389d"
+      },
+      "lastPushTimeStamp": "2021-05-12T22:51:37.112Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-awscognitotutorialst-dev-161130-deployment/amplify-cfn-templates/auth/awscognitotutorialst4270389d-cloudformation-template.yml",
+        "logicalId": "authawscognitotutorialst4270389d"
+      },
+      "lastPushDirHash": "DRGK5M6C0LwqRNHktMo/uyC5RP4="
+    }
+  }
+}
