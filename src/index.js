@@ -11,7 +11,7 @@ import config from "./aws-exports";
 
 // Amplify.configure(config);
 
-Auth.configuration(config);
+Auth.configure(config);
 
 // Amplify.configure({
 //   Auth: {
