@@ -4,14 +4,25 @@ import ReactDOM from "react-dom";
 import "bulma/css/bulma.min.css";
 import "./index.css";
 import App from "./App";
-import Amplify from "aws-amplify";
+import Amplify, { Auth } from "aws-amplify";
 import configuration from "./configuration";
 import * as serviceWorker from "./serviceWorker";
 import config from "./aws-exports";
 
-Amplify.configure(config);
+// Amplify.configure(config);
 
-Amplify.configure({
+Auth.configuration(config);
+
+// Amplify.configure({
+//   Auth: {
+//     mandatorySignedIn: true,
+//     region: configuration.cognito.REGION,
+//     userPoolId: configuration.cognito.USER_POOL_ID,
+//     userPoolWebClientId: configuration.cognito.APP_CLIENT_ID,
+//   },
+// });
+
+Auth.configure({
   Auth: {
     mandatorySignedIn: true,
     region: configuration.cognito.REGION,
